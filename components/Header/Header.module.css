@@ -1,5 +1,7 @@
 .header {
     padding: 28px 0;
+    position: relative; 
+  z-index: 100;
 }
 
 .catalog {

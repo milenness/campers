@@ -22,3 +22,9 @@ transition: border-color var(--main-transition);
 .button:active {
     border-color: var(--green-hover);
 }
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

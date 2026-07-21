@@ -1,0 +1,54 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(223, 223, 223, 0.44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+ color: var(--main);
+  padding: 48px 96px;
+  background-color: var(--white);
+  border-radius: 16px;
+}
+
+.loaderTitle {
+    font-weight: 600;
+font-size: 24px;
+line-height: 1.33;
+margin-bottom: 16px;
+margin-top: 32px;
+}
+
+.loaderText {
+    font-weight: 500;
+    max-width: 272px;
+}
+
+
+.spinner {
+    margin: 0 auto;
+  width: 72px;
+  height: 72px;
+  animation: rotateLoader 1s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotateLoader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

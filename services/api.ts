@@ -7,10 +7,15 @@ export const instance = axios.create({
 export async function fetchCampers(params = {}) {
   const cleanParams = Object.fromEntries(
     Object.entries(params).filter(
-      (entry) => entry[1] !== "" && entry[1] !== null && entry[1] !== undefined,
+      ([, value]) => value !== "" && value !== null && value !== undefined,
     ),
   );
 
   const response = await instance.get("/campers", { params: cleanParams });
+  return response.data;
+}
+
+export async function fetchCampersFilters() {
+  const response = await instance.get("/campers/filters");
   return response.data;
 }
