@@ -8,7 +8,7 @@ import CatalogList from "@/components/CatalogList";
 import { fetchCampers } from "@/services/api";
 import { Camper } from "@/types/camper";
 import Loader from "@/components/Loader";
-import NoCampersFound from "@/components/NoCampersFound"; // Виправлено шлях імпорту
+import NoCampersFound from "@/components/NoCampersFound";
 
 export default function CatalogPage() {
   const [page, setPage] = useState<number>(1);
@@ -55,7 +55,6 @@ export default function CatalogPage() {
     setPage(1);
   };
 
-  // Єдина функція для повного скидання фільтрів та візуального стану
   const handleClearAll = () => {
     setFilters({
       location: "",
@@ -64,7 +63,7 @@ export default function CatalogPage() {
       transmission: "",
     });
     setPage(1);
-    setFilterKey((prev) => prev + 1); // Змушує компонент Filter перемонтуватись і очистити інпути
+    setFilterKey((prev) => prev + 1);
   };
 
   const hasMore = campers.length < totalCampers;
@@ -72,7 +71,6 @@ export default function CatalogPage() {
   return (
     <section className={css.section}>
       <div className={`container ${css.wrapper}`}>
-        {/* key={filterKey} скидає візуальні інпути у фільтрі */}
         <Filter key={filterKey} onFilter={handleApplyFilter} />
 
         {!isLoading && campers.length === 0 ? (

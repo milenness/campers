@@ -19,8 +19,7 @@ interface FilterProps {
 }
 
 export default function Filter({ onFilter }: FilterProps) {
- 
-  const { data: filterOptions, isLoading } = useQuery({
+  const { data: filterOptions } = useQuery({
     queryKey: ["campers-filters"],
     queryFn: fetchCampersFilters,
   });
@@ -36,15 +35,11 @@ export default function Filter({ onFilter }: FilterProps) {
     onFilter(values);
   };
 
-  if (isLoading)
-    return <aside className={css.sidebar}>Завантаження фільтрів...</aside>;
-
   return (
     <aside className={css.sidebar}>
       <Formik initialValues={initialValues} onSubmit={handleSubmit}>
         {({ resetForm }) => (
           <Form className={css.form}>
-            
             {/* Блок Location */}
             <div className={css.field}>
               <label htmlFor="location" className={css.label}>
