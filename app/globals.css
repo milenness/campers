@@ -21,10 +21,6 @@
   --second-family: "Manrope", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--font-family);
   font-weight: 400;
@@ -32,7 +28,7 @@ body {
  font-size: 16px;
 color: var(--text);
   overflow-x: hidden;
-  background: var(--inputs);
+  background-color: var(--white);
 }
 
 
@@ -73,6 +69,3 @@ max-width: 1440px;
     padding: 0 64px;
   margin: 0 auto;
 }
-
-
-

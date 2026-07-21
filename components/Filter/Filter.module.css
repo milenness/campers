@@ -1,0 +1,165 @@
+.sidebar {
+    padding: 24px;
+    background-color: var(--inputs);
+    border-radius: 20px;
+    position: sticky;
+    top: 48px;
+    align-self: flex-start;
+
+    max-height: calc(100vh - 48px); 
+    overflow-y: auto; 
+    scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+.inputWrapper {
+position: relative;
+}
+
+.input {
+    padding: 16px 20px 16px 48px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    color: var(--main);
+}
+
+.input:focus::placeholder {
+    color: transparent;
+}
+
+.mapIcon {
+ color: var(--gray);
+ position: absolute;
+ top: 13px;
+ left: 20px;
+ transition: color var(--main-transition);
+}
+
+
+.inputWrapper:focus-within .mapIcon {
+    color: var(--main);
+}
+
+.title {
+    margin-bottom: 24px;
+    font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+color: var(--main);
+}
+
+.group {
+margin-bottom: 24px;
+}
+
+.group:last-of-type {
+    margin-bottom: 48px;
+}
+
+.groupTitle {
+    color: var(--gray);
+    margin-bottom: 8px;
+}
+
+.radioLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+   color: var(--main);
+    user-select: none;
+    margin-bottom: 8px;
+}
+
+.radioInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.customRadio {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color var(--main-transition);
+    flex-shrink: 0;
+}
+
+.customRadio::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: var(--text);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform var(--main-transition);
+}
+
+.radioInput:checked + .customRadio::after {
+    transform: scale(1);
+}
+
+.searchButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 16px 0;
+letter-spacing: -0.01em;
+color: var(--white);
+background-color: var(--grey-green);
+border-radius: 200px;
+border: none;
+transition: background-color var(--main-transition);
+}
+
+.searchButton:hover, .searchButton:focus, .searchButton:active {
+background-color: var(--green-hover);
+}
+
+.clearButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--gray-light);
+    border-radius: 200px;
+    width: 100%;
+    padding: 16px 0;
+    background-color: var(--white);
+transition: border-color var(--main-transition);
+}
+
+.clearButton:hover, 
+.clearButton:focus, 
+.clearButton:active {
+    border-color: var(--green-hover);
+}
+
+.closeIcon {
+    color:var(--main);
+}

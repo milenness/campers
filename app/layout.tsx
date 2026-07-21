@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
+import Providers from "@/components/Providers"
 
 import Header from "@/components/Header"
 
@@ -48,10 +49,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={`${inter.variable} ${manrope.variable}`}>
-        <Header />
-        <>{children}</>
+        <Providers>
+          <Header />
+          <>{children}</>
+        </Providers>
       </body>
     </html>
   );

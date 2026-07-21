@@ -10,7 +10,7 @@ export default function Hero() {
             You can find everything you want in our catalog
           </p>
           <Link
-            href="/"
+            href="/catalog"
             className={css.button}
             aria-label="Перейти до каталогу"
           >

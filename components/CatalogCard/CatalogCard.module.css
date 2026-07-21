@@ -1,0 +1,89 @@
+.card {
+ display: flex;
+ gap: 24px;
+ background-color: var(--inputs);
+ padding: 24px 97px 24px 24px;
+ border-radius: 16px;
+}
+
+.img {
+    border-radius: 16px;
+width: 219px;
+height: 240px;
+
+}
+
+.titleCost {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.title,
+.cost {
+    font-weight: 600;
+font-size: 24px;
+line-height: 1.33;
+color: var(--main);
+}
+
+.starsLocation {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stars, 
+.location {
+display: flex;
+align-items: center;
+gap: 4px;
+color: var(--main);
+}
+
+.starIcon {
+color: var(--rating);
+}
+
+.text {
+    margin-bottom: 24px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 494px;
+}
+
+.categories {
+display: flex;
+gap: 8px;
+margin-bottom: 24px;
+}
+
+.categoryItem {
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--badges);
+    mix-blend-mode: multiply;
+    border-radius: 100px;
+
+    font-weight: 500;
+color: var(--main);
+}
+
+.details {
+    display: inline-flex;
+border-radius: 200px;
+padding: 16px 43.5px;
+background-color: var(--grey-green);
+
+font-weight: 500;
+letter-spacing: -0.01em;
+color: var(--white);
+transition: background-color var(--main-transition);
+}
+
+.details:hover, .details:focus, .details:active {
+background-color: var(--green-hover);
+}
