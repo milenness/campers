@@ -20,3 +20,7 @@
 * **Styling:** CSS Modules
 * **Key Libraries:** Swiper.js (for galleries), Axios (for API requests)
 * **Deployment:** Vercel
+
+## 📫 How to reach me:
+
+[LinkedIn](https://www.linkedin.com/in/milena-karpenko) | [Telegram](https://t.me/sombrM) | [Email](mailto:milen.karpenko@gmail.com)
