@@ -1,11 +1,16 @@
-import Reviews from "@/components/Reviews"
-import CamperDetail from "@/components/CamperDetail"
+import Reviews from "@/components/Reviews";
+import CamperDetail from "@/components/CamperDetail";
+import { Camper } from "@/types/camper";
 
-export default function DetailPage() {
-    return (
-       <>
-            <CamperDetail />
-            <Reviews/>
-       </>
-)
+interface DetailPageProps {
+  camper: Camper;
+}
+
+export default function DetailPage({ camper }: DetailPageProps) {
+  return (
+    <>
+      <CamperDetail camper={camper} />
+      <Reviews />
+    </>
+  );
 }

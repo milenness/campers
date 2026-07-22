@@ -12,11 +12,23 @@ export default function Reviews() {
           <ul className={css.reviewsList}>
             <li className={css.reviewsItem}>
               <div className={css.userInfo}>
-                <div>A</div>
+                <div className={css.nameLetter}>A</div>
 
                 <div className={css.nameWrapper}>
                   <p className={css.userName}>Alice</p>
                   <ul className={css.stars}>
+                    <li className={css.star}>
+                      <FaStar className={css.starIcon} size={16} />
+                    </li>
+                    <li className={css.star}>
+                      <FaStar className={css.starIcon} size={16} />
+                    </li>
+                    <li className={css.star}>
+                      <FaStar className={css.starIcon} size={16} />
+                    </li>
+                    <li className={css.star}>
+                      <FaStar className={css.starIcon} size={16} />
+                    </li>
                     <li className={css.star}>
                       <FaStar className={css.starIcon} size={16} />
                     </li>
