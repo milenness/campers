@@ -1,0 +1,98 @@
+.formWrapper {
+    padding: 44px 57px;
+    border: 1px solid var(--gray-light);
+border-radius: 16px;
+width: 641px;
+}
+
+.formTitle {
+    font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+color: var(--main);
+margin-bottom: 8px;
+}
+
+.formSubtitle {
+    margin-bottom: 24px;
+}
+
+.input {
+    padding: 18px;
+    background-color: var(--inputs);
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.input::placeholder {
+color: var(--gray);
+}
+
+.errorInput {
+    border-color: #ec383b;
+    background-color: #ffdfdf;
+}
+
+.fieldWrapperName {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.fieldWrapperEmail {
+      position: relative;
+    margin-bottom: 24px;
+}
+
+.errorIcon {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    color: #ec383b;
+}
+
+.floatingLabel {
+  font-family: var(--second-family);
+  border-radius: 8px;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #ec383b;
+  background-color: #ffdfdf;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--main-transition), visibility var(--main-transition), top var(--main-transition);
+}
+
+.floatingLabel.showLabel {
+  opacity: 1;
+  visibility: visible;
+  top: -12px;
+  transform: translateY(0);
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 0;
+
+    font-weight: 500;
+letter-spacing: -0.01em;
+color: var(--white);
+
+background-color: var(--grey-green);
+border: none;
+border-radius: 200px;
+transition: background-color var(--main-transition);
+}
+
+.submitButton:hover, .submitButton:focus, .submitButton:active {
+background-color: var(--green-hover);
+}

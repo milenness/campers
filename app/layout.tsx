@@ -1,10 +1,10 @@
+import { Toaster } from "react-hot-toast";
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
-import Providers from "@/components/Providers"
+import Providers from "@/components/Providers";
 
-import Header from "@/components/Header"
-
+import Header from "@/components/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
@@ -54,9 +54,42 @@ export default function RootLayout({
         <Providers>
           <Header />
           <>{children}</>
+          <Toaster
+            position="top-center"
+            toastOptions={{
+              style: {
+                fontSize: "18px",
+                padding: "20px 28px",
+                borderRadius: "16px",
+                maxWidth: "500px", 
+                width: "100%", 
+                fontFamily: "var(--second-family)",
+                boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
+              },
+              success: {
+                style: {
+                  background: "#829b91",
+                  color: "#fff",
+                },
+                iconTheme: {
+                  primary: "#fff",
+                  secondary: "#829b91",
+                },
+              },
+              error: {
+                style: {
+                  background: "#ffdfdf",
+                  color: "#e44848",
+                },
+                iconTheme: {
+                  primary: "#e44848",
+                  secondary: "#ffdfdf",
+                },
+              },
+            }}
+          />
         </Providers>
       </body>
     </html>
   );
-};
-
+}

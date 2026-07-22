@@ -10,7 +10,7 @@ export default function DetailPage({ camper }: DetailPageProps) {
   return (
     <>
       <CamperDetail camper={camper} />
-      <Reviews />
+      <Reviews camperId={camper.id} />
     </>
   );
 }
