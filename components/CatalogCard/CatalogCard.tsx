@@ -38,7 +38,7 @@ export default function CatalogCard({ camper }: CamperProps) {
           <h3 className={css.title}>{camper.name}</h3>
           <span className={css.cost}>
             <span>€</span>
-            {camper.price.toFixed(2)}
+            {Math.trunc(camper.price)}
           </span>
         </div>
 

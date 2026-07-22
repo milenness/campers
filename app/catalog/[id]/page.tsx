@@ -1,10 +1,10 @@
-import Hero from "@/components/Hero";
+import DetailPage from "@/components/DetailPage";
 
 
 export default function Home() {
   return (
     <main>
-        <Hero/>
+      <DetailPage />
     </main>
   );
 }

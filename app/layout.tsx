@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "TravelTrucks | Rent Your Perfect Campervan",
     description:
       "Explore our wide range of campervans and start your journey today. High-quality vehicles for unforgettable experiences.",
-    url: "https://your-site-url.com", // Замініть на ваш реальний домен
+    url: "https://your-site-url.com",
     siteName: "TravelTrucks",
     locale: "en_US",
     type: "website",
