@@ -121,6 +121,7 @@ export default function CamperDetail({ camper }: CamperDetailProps) {
                       className={css.thumbImage}
                       fill
                       sizes="140px"
+                      priority
                     />
                   </div>
                 </SwiperSlide>
