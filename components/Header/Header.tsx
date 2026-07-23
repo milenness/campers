@@ -21,7 +21,7 @@ export default function Header() {
               alt="Logo"
               width={136}
               height={16}
-              priority
+              // priority
             />
           </Link>
 

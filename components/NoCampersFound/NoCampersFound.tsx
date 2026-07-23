@@ -19,7 +19,7 @@ export default function NoCampersFound({
         width={488}
         height={463}
         className={css.img}
-        priority
+        // priority
       />
       <h2 className={css.title}>No campers found</h2>
       <p className={css.text}>

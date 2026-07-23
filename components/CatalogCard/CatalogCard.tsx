@@ -30,7 +30,7 @@ export default function CatalogCard({ camper }: CamperProps) {
         width={219}
         height={240}
         className={css.img}
-        priority
+        // priority
       />
 
       <div className={css.info}>

@@ -82,7 +82,7 @@ export default function CamperDetail({ camper }: CamperDetailProps) {
                       className={css.mainImage}
                       fill
                       sizes="(max-width: 768px) 100vw, 630px"
-                      priority
+                      // priority
                     />
                   </div>
                 </SwiperSlide>
@@ -120,7 +120,7 @@ export default function CamperDetail({ camper }: CamperDetailProps) {
                       className={css.thumbImage}
                       fill
                       sizes="140px"
-                      priority
+                      // priority
                     />
                   </div>
                 </SwiperSlide>
