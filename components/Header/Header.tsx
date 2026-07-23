@@ -17,7 +17,7 @@ export default function Header() {
         <nav className={css.nav}>
           <Link href="/" className={css.logo} aria-label="Перейти на головну">
             <Image
-              src="/logo.svg"
+              src="/Logo.svg"
               alt="Logo"
               width={136}
               height={16}
