@@ -69,7 +69,6 @@ export default function CamperDetail({ camper }: CamperDetailProps) {
 
               return (
                 <SwiperSlide key={image.id} className={css.mainSlide}>
-                  {/* Додано інлайн-стиль position: relative */}
                   <div
                     style={{
                       position: "relative",

@@ -18,8 +18,8 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "TravelTrucks | Your Dream Campervan Rental",
-    template: "%s | TravelTrucks",
+    default: "TravelTrucks",
+    template: "%s",
   },
   description:
     "Discover the campervan of your dreams with TravelTrucks. Browse our catalog for reliable, comfortable, and stylish campervans perfect for your next road trip adventure.",
